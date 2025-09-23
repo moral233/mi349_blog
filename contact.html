@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - Jon Morales Blog</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+		header { background: #333; color: #fff; padding: 1em 0; text-align: center; }
+		nav { background: #444; padding: 0.5em 0; text-align: center; }
+		nav a { color: #fff; margin: 0 1em; text-decoration: none; font-weight: bold; }
+		nav a:hover { text-decoration: underline; }
+		main { max-width: 600px; margin: 2em auto; padding: 1em; background: #f9f9f9; border-radius: 8px; }
+		form { display: flex; flex-direction: column; gap: 1em; }
+		label { font-weight: bold; }
+		input, select, textarea { padding: 0.5em; border: 1px solid #ccc; border-radius: 4px; }
+		button { background: #333; color: #fff; border: none; padding: 0.75em 1.5em; border-radius: 4px; font-size: 1em; cursor: pointer; }
+		button:hover { background: #444; }
+		footer { background: #333; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Contact Jon Morales Blog</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	<main>
+		<h2>Contact Form</h2>
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email address</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="reason">Reason for contact</label>
+			<select id="reason" name="reason" required>
+				<option value="">--Please choose an option--</option>
+				<option value="hi">Saying hi</option>
+				<option value="contractor">Looking for a contractor</option>
+				<option value="interview">Interested in an interview</option>
+			</select>
+
+			<label for="comment">Comment</label>
+			<textarea id="comment" name="comment" rows="5" required></textarea>
+
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2025 Jon Morales Blog</p>
+	</footer>
+</body>
+</html>
