@@ -7,6 +7,42 @@ body {
     color: #222;
 }
 
+h1, h2, h3 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* Class selector for highlight */
+.highlight {
+    background: #fffbe6;
+    border-left: 4px solid #ffd700;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+
+/* ID selector for a special section */
+#special-section {
+    background: #e0f7fa;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 2em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* Attribute selector for required form fields */
+input[required], textarea[required], select[required] {
+    border-color: #ffd700;
+    background: #fffde7;
+}
+
 header {
     background: #333;
     color: #fff;
