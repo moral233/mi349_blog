@@ -51,15 +51,11 @@ header {
 }
 
 nav {
-    background: #444;
-    padding: 0.5em 0;
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
 nav a {
     color: #fff !important;
     margin: 0 1em;
