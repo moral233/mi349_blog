@@ -50,6 +50,11 @@ header {
     text-align: center;
 }
 
+header h1 {
+    color: #fff;
+}
+}
+
 nav {
     background: #444;
     padding: 0.5em 0;
