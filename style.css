@@ -54,6 +54,10 @@ nav {
     background: #444;
     padding: 0.5em 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 nav a {
@@ -70,12 +74,62 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 2em auto;
     padding: 1em;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Two column Flexbox layout */
+.two-column {
+    display: flex;
+    gap: 2em;
+}
+.sidebar {
+    flex: 0 0 220px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    height: fit-content;
+    position: sticky;
+    top: 70px;
+}
+.main-content {
+    flex: 1 1 0;
+}
+
+/* Three column Flexbox layout */
+.three-column {
+    display: flex;
+    gap: 2em;
+}
+.col-left, .col-right {
+    flex: 0 0 200px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.col-center {
+    flex: 2 1 0;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 900px) {
+    .two-column, .three-column {
+        flex-direction: column;
+        gap: 0;
+    }
+    .sidebar, .col-left, .col-right {
+        margin-bottom: 1em;
+        position: static;
+    }
 }
 
 article {
