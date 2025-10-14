@@ -1,5 +1,5 @@
 /* Responsive styles for tablets and small screens */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     main {
         max-width: 100%;
         padding: 0.5em;
@@ -31,7 +31,7 @@
     table {
         font-size: 0.95em;
     }
-}
+} */
 
 /* Responsive styles for mobile screens */
 @media screen and (max-width: 616px) {
@@ -56,9 +56,6 @@
     }
     img {
         width: 100% !important;
-        height: auto !important;
-        border-radius: 4px;
-        box-shadow: none;
     }
     .sidebar, .col-left, .col-right, .col-center {
         width: 100%;
