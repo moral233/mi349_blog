@@ -1,3 +1,38 @@
+/* Responsive styles for small screens */
+@media screen and (max-width: 616px) {
+    header {
+        padding: 0.5em 0;
+    }
+    nav {
+        padding: 0.25em 0;
+    }
+    nav a {
+        margin: 0 0.5em;
+        font-size: 0.95em;
+    }
+    main {
+        padding: 0.5em;
+    }
+    .two-column, .three-column {
+        flex-direction: column;
+        gap: 0;
+    }
+    .sidebar, .col-left, .col-right {
+        margin-bottom: 1em;
+        position: static;
+    }
+    header ul {
+        padding-left: 0;
+        margin: 0.5em 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        margin: 0.5em 0;
+    }
+}
 
 body {
     font-family: Arial, sans-serif;
